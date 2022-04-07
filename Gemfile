@@ -16,13 +16,8 @@ group :development, :test do
   gem 'rubocop', '1.20'
   gem 'sinatra'
   gem 'sinatra-contrib'
-  gem 'thin'
   gem 'puma'
   gem 'reel'
-  gem 'http'
-  gem 'webrick'
-  gem 'rackup'
+  # gem 'webrick'
+  gem 'launchy'
 end
-
-
-# gem "rails"
