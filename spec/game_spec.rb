@@ -15,4 +15,14 @@ describe Game do
     player = Player.new('player')
     expect(subject.attack(player)).to eq 90
   end
+
+  it 'switches current role' do
+    subject.switch_player
+    expect(subject.current_turn).to eq subject.player_2
+  end
+
+  it 'switches next role' do
+    subject.switch_player
+    expect(subject.next_turn).to eq subject.player_1
+  end
 end
